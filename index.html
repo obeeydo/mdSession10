@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+
+<h1>Welcome to the User Input Form</h1>
+
+
+<div class="container wrapper">
+    <input type="text" id="input" placeholder="Name">
+    <input type="text" id="input2" placeholder="Email">
+    <input type="password" id="input3" placeholder="Password">
+    <button id="button" class="confirm-button" onclick="confirmAction();">Confirm</button>
+
+</div>
+
+
+
+
+
+</html>
+
+<script type="text/javascript">​
+
+   console.log(document.getElementById("content"));​
+
+   const btn = document.getElementById("button");​
+
+   btn.addEventListener('click', echoOutput);​
+
+          const echoOutput = (event) => {​
+
+           echoBlock.textContent = event.target.value;​
+
+       }​
+
+       const input = document.querySelector('input'); // fetch input​
+
+       const echoBlock = document.getElementById('echo');​
+
+       input.addEventListener('input', echoOutput);​
+
+</script>​
+
+<style>
+    body {
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+    }
+
+    .btn {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    .confirm-button {
+        background-color: #28a745;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .container {
+        margin: 20px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+</style>
